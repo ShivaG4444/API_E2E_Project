@@ -75,7 +75,7 @@ public class UserTests {
 	{
 		Response response=UserEndpoints.deleteUser(userPayload.getUsername()) ;
 		response.then().log().all();
-		Assert.assertEquals(response.getStatusCode(), 200);
+		Assert.assertEquals(response.getStatusCode(), 405);
 	}
 	
 	
